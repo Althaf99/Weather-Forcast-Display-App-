@@ -8,14 +8,12 @@ import Display from "./components/Display";
 
 const App = () => {
   return (
-    <>
-      <Router>
-        <Routes>
-          <Route path="/" element={<LoginForm />} />
-          <Route path="/dashboard" element={<NavigationBar />} />
-        </Routes>
-      </Router>
-    </>
+    <Router>
+      <Routes>
+        <Route path="/" element={<LoginForm />} />
+        <Route path="/dashboard" element={<NavigationBar />} />
+      </Routes>
+    </Router>
   );
 };
 
